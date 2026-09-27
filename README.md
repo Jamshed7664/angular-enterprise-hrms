@@ -1,221 +1,162 @@
-# Angular Enterprise HRMS
+<h1 align="center">🏢 Angular Enterprise HRMS</h1>
 
-**Production-Inspired Human Resource Management System**  
-**Portfolio Flagship Project | Code With Jamshed**
+<p align="center">
+  <strong>A production-inspired Human Resource Management System built with Angular 20</strong>
+</p>
 
-Angular Enterprise HRMS is a modern, production-inspired Human Resource Management System frontend built with Angular 20. It demonstrates scalable Angular architecture, realistic HR workflows, reusable enterprise UI, role-aware experiences, responsive design, Signals, Reactive Forms, Angular CDK, typed mock services, and backend-ready integration patterns.
+<p align="center">
+  Modern Angular architecture • Signals • RxJS • Reactive Forms • Role-Based Access • Enterprise UI
+</p>
 
-## Highlights
+<p align="center">
+  <a href="#-features">Features</a> •
+  <a href="#-architecture">Architecture</a> •
+  <a href="#-tech-stack">Tech Stack</a> •
+  <a href="#-getting-started">Getting Started</a> •
+  <a href="#-screenshots">Screenshots</a>
+</p>
 
-- Angular 20 + TypeScript
-- Standalone Components
+---
+
+## 📌 Overview
+
+**Angular Enterprise HRMS** is a production-inspired Human Resource Management System frontend designed to demonstrate modern Angular application architecture and realistic enterprise HR workflows.
+
+The application covers the complete employee lifecycle including employee management, attendance, leave, timesheets, payroll, performance, recruitment, reporting, administration, and employee self-service.
+
+The project focuses on:
+
+- Scalable feature-based Angular architecture
+- Standalone components
 - Angular Signals and computed state
-- RxJS-ready data-access services
 - Reactive Forms and validation
 - Lazy-loaded feature routes
-- Role-aware route guard demonstration
-- Responsive enterprise sidebar/header
-- Light, dark and system themes
-- Notification and current-user dropdowns
-- Typed mock database with synthetic HR data
-- Angular CDK recruitment pipeline
-- Backend-ready feature services
+- Role-aware navigation and route guards
+- Reusable enterprise UI components
+- Typed data-access services
+- Responsive application design
+- Light, dark, and system themes
+- Backend-ready integration patterns
 
-## Demo Credentials
+> This is a frontend portfolio project. Authentication, authorization, payroll calculations, file storage, and data persistence are mocked or presentation-oriented where noted.
+
+---
+
+## 🚀 Live Demo
+
+> **Live deployment coming soon**
+
+<!-- Replace the URL below after deployment -->
+<!-- [🚀 View Live Application](https://your-live-url.com) -->
+
+### Demo Account
 
 ```text
 Email: admin@hrms.dev
 Password: password
 ```
 
-The v1 authentication flow is intentionally mocked for portfolio demonstration.
+The authentication flow is intentionally mocked for demonstration purposes.
 
-## Main Modules
+---
 
-### Authentication & Access
+## ✨ Features
 
-- Login
-- Forgot Password
-- Reset Password
-- OTP / verification demo
-- Session Expired
-- Access Denied
-- 404 page
-- Auth guard
-- Role guard
-- Current-user session
+| Module | Key Capabilities |
+|---|---|
+| 🔐 **Authentication** | Login, forgot/reset password, OTP demo, session handling, auth & role guards |
+| 📊 **HR Dashboard** | Workforce KPIs, approvals, attendance insights, recruitment summary & people events |
+| 👥 **Employees** | Directory, employee profiles, employment information, compensation & documents |
+| 🏢 **Organization** | Departments, department heads, office locations & reporting hierarchy |
+| ⏱️ **Attendance** | Attendance KPIs, clock-in/out demo, corrections & approval workflow |
+| 🌴 **Leave** | Leave balances, requests, filters, manager comments & approvals |
+| 🕒 **Timesheets** | Weekly timesheets, billable hours, submission & manager approval |
+| 💰 **Payroll** | Salary overview, allowances, deductions, net pay & payroll status |
+| 🎯 **Performance** | Review cycles, ratings, goals, feedback & performance summaries |
+| 💼 **Recruitment / ATS** | Job openings and drag-and-drop candidate pipeline |
+| 📁 **Documents** | Employee document metadata, expiry tracking, categories & status |
+| 📈 **Reports** | Workforce, attendance, leave, payroll, performance & recruitment analytics |
+| 🛡️ **Administration** | Role-permission matrix, approval configuration & audit log |
+| ⚙️ **Settings** | Profile, company settings, working hours, theme, notifications & security |
 
-### HR Dashboard
+---
 
-- Total workforce KPI
-- Active employee KPI
-- Employees on leave
-- Pending approvals
-- Open positions
-- New joiners
-- Department distribution
-- Attendance summary
-- Leave approval queue
-- Recruitment pipeline summary
-- Upcoming people events
+## ⭐ Technical Highlights
 
-### Employee Management
+### Modern Angular
 
-- Employee Directory
-- Search and status filtering
-- Add Employee
-- Edit Employee
-- Employee Details
-- Personal information
-- Employment information
-- Compensation summary
-- Attendance summary
-- Leave summary
-- Documents
-- Status badges
-- Feature-level service and Signal store
+- Angular 20
+- Standalone Components
+- Angular Signals
+- Computed Signals
+- Reactive Forms
+- Angular Router
+- Lazy Loading
+- Functional application architecture
 
-### Organization
+### Enterprise Architecture
 
-- Department cards
-- Department creation
-- Department heads
-- Office locations
-- Employee counts
-- Reporting hierarchy visualization
+- Feature-based project structure
+- Separation of UI and data-access concerns
+- Core and shared layers
+- Feature-level services and stores
+- Typed models
+- Reusable components
+- Centralized application services
 
-### Attendance
+### State Management
 
-- Daily attendance dashboard
-- Present / Late / WFH / Absent KPIs
-- Department filtering
-- Clock In / Clock Out demo
-- Attendance records
-- Attendance correction requests
-- Approval / rejection workflow
+Angular Signals are used for:
 
-### Leave Management
+- Session state
+- Theme state
+- Feature-level stores
+- Filters
+- Selected UI state
+- Mock database state
+- Derived dashboard KPIs
 
-- Leave balances
-- Apply Leave form
-- Leave request list
-- Status filtering
-- Pending approvals
-- Approve / reject workflow
-- Manager comments
+Computed Signals are used for derived state instead of repeatedly calculating values inside templates.
 
-### Timesheets
+RxJS supports asynchronous and data-access workflows.
 
-- Weekly team timesheets
-- Total and billable hours
-- Draft / Submitted / Approved / Rejected states
-- Submit workflow
-- Manager approval / rejection
-- Time-entry detail chips
+### Access Control
 
-### Payroll
+The project demonstrates:
 
-- Payroll overview
-- Basic salary
-- Allowances
-- Deductions
-- Net pay
-- Payroll status
-- Mark as Paid demo
-- Payslip action placeholder
+- Authentication guards
+- Role guards
+- Restricted routes
+- Role-aware navigation
+- Permission-oriented administration UI
 
-> Payroll is presentation-only in v1. It does not perform real statutory, tax, banking or payment calculations.
+> Frontend authorization is for demonstration purposes. A production application must enforce authorization on the backend.
 
-### Performance
+---
 
-- Review cycles
-- Ratings
-- Manager feedback
-- Goals
-- Goal progress
-- Goal status
-- Average rating
-- Top-performer summary
+## 🛠 Tech Stack
 
-### Recruitment / ATS
+| Technology | Usage |
+|---|---|
+| **Angular 20** | Frontend framework |
+| **TypeScript** | Strongly typed application development |
+| **Standalone Components** | Angular component architecture |
+| **Angular Signals** | Reactive application and feature state |
+| **RxJS** | Async and data-access workflows |
+| **Angular Router** | Navigation and lazy-loaded features |
+| **Reactive Forms** | Enterprise forms and validation |
+| **Angular CDK** | Drag-and-drop and interaction utilities |
+| **Bootstrap 5.3** | Responsive layout utilities |
+| **SCSS** | Component and application styling |
+| **CSS Variables** | Design system and theming |
+| **Font Awesome** | Application icons |
+| **Typed Mock Services** | Demonstration data layer |
 
-- Job openings
-- Applicant counts
-- Candidate pipeline
-- Applied
-- Screening
-- Interview
-- Offer
-- Hired
-- Rejected
-- Angular CDK drag and drop
+---
 
-### Documents
+## 🏗 Architecture
 
-- Employee document metadata
-- Categories
-- Expiry dates
-- Valid / Expiring / Expired statuses
-- Search and filtering
-- View / Download placeholders
-
-> Real binary file storage is intentionally deferred.
-
-### Reports & Analytics
-
-- Workforce Overview
-- Headcount
-- Department
-- Attendance
-- Leave
-- Timesheet
-- Payroll Summary
-- Performance
-- Recruitment
-- Date filters
-- Department filter
-- Export UI placeholders
-- Workforce and attendance visual summaries
-
-### Administration
-
-- Role-permission matrix
-- Approval configuration
-- Audit Log
-- Scoped/full access visualization
-- System administration UI
-
-### Settings & Employee Self-Service
-
-- My Profile
-- Company Settings
-- Working Hours
-- Timezone
-- Appearance
-- Light / Dark / System theme
-- Notification Preferences
-- Security
-- Change Password placeholder
-- Sign out
-
-## Technology Stack
-
-| Technology | Responsibility |
-| --- | --- |
-| Angular 20 | Primary frontend framework |
-| TypeScript | Strongly typed application code |
-| Standalone Components | Component architecture |
-| Angular Signals | Local and feature state |
-| RxJS | Async/data-access workflows |
-| Angular Router | Navigation and lazy loading |
-| Reactive Forms | Business forms and validation |
-| Angular CDK | Drag/drop and interaction utilities |
-| Bootstrap 5.3 | Responsive utilities |
-| SCSS + CSS Variables | Design system and theming |
-| Font Awesome | Icons |
-| Typed Mock Services | v1 data layer |
-
-## Architecture
+The application follows a feature-oriented architecture designed to keep business domains isolated while sharing common infrastructure and reusable UI.
 
 ```text
 src/
@@ -228,15 +169,18 @@ src/
 │   │   ├── models/
 │   │   ├── services/
 │   │   └── utils/
+│   │
 │   ├── shared/
 │   │   ├── components/
 │   │   ├── directives/
 │   │   ├── pipes/
 │   │   ├── ui/
 │   │   └── validators/
+│   │
 │   ├── layout/
 │   │   ├── auth-layout/
 │   │   └── main-layout/
+│   │
 │   ├── features/
 │   │   ├── auth/
 │   │   ├── dashboard/
@@ -252,19 +196,20 @@ src/
 │   │   ├── reports/
 │   │   ├── administration/
 │   │   └── settings/
+│   │
 │   ├── app.component.ts
 │   ├── app.config.ts
 │   └── app.routes.ts
+│
 ├── assets/
-│   ├── images/
-│   ├── icons/
-│   └── mock-data/
 ├── environments/
 ├── styles/
 └── styles.scss
 ```
 
-## Employee Feature Example
+### Feature Structure Example
+
+Individual business domains can own their pages, data-access layer, store, and routing.
 
 ```text
 employees/
@@ -272,75 +217,199 @@ employees/
 │   ├── employee-list/
 │   ├── employee-details/
 │   └── employee-form/
+│
 ├── data-access/
 │   ├── employee.service.ts
 │   └── employee.store.ts
+│
 └── employee.routes.ts
 ```
 
-## Routing Strategy
+This helps keep features independently maintainable as the application grows.
 
-Major HR domains are lazy loaded. Auth pages use an authentication layout, while protected HRMS pages use the main application shell.
+---
 
-Role metadata is demonstrated on restricted routes such as Payroll and Administration. Frontend authorization is a UI demonstration only; real production authorization must be enforced by a backend.
+## 🔄 Data Flow
 
-## State Management
-
-Angular Signals are used for:
-
-- session state
-- theme state
-- mock database state
-- filters
-- selected UI state
-- derived KPIs
-- feature-level stores
-
-Computed Signals are used instead of repeated expensive template calculations.
-
-## Backend-Ready Data Layer
-
-Components consume data from core or feature services rather than embedding business datasets in templates.
+Components consume data through feature-level services or stores instead of directly embedding business datasets inside templates.
 
 ```text
-Component
-   ↓
-Feature Data-Access Service / Store
-   ↓
-MockDatabaseService
-   ↓
-Future REST API
+┌─────────────────────────┐
+│       Component         │
+└────────────┬────────────┘
+             │
+             ▼
+┌─────────────────────────┐
+│ Feature Service / Store │
+└────────────┬────────────┘
+             │
+             ▼
+┌─────────────────────────┐
+│   MockDatabaseService   │
+└────────────┬────────────┘
+             │
+             ▼
+┌─────────────────────────┐
+│     Future REST API     │
+└─────────────────────────┘
 ```
 
-The mock layer can later be replaced with:
+The mock data layer is intentionally isolated so it can later be replaced with a real backend such as:
 
 - Spring Boot
 - Node.js / Express
 - NestJS
 - .NET
 - Firebase
-- another REST backend
+- Other REST APIs
 
-## Getting Started
+---
+
+## 🧭 Routing Strategy
+
+Major HR domains are lazy loaded to keep feature boundaries clear and avoid loading the complete application upfront.
+
+The application uses separate layouts for:
+
+### Authentication
+
+```text
+Login
+Forgot Password
+Reset Password
+OTP / Verification
+```
+
+### Protected Application
+
+```text
+Dashboard
+Employees
+Attendance
+Leave
+Payroll
+Performance
+Recruitment
+Reports
+Administration
+Settings
+```
+
+Role metadata is demonstrated on restricted routes such as **Payroll** and **Administration**.
+
+---
+
+## 🎨 Theming & Responsive Design
+
+The application supports:
+
+- ☀️ Light theme
+- 🌙 Dark theme
+- 💻 System theme
+- 📱 Responsive layouts
+- Collapsible enterprise navigation
+- Responsive tables and forms
+- Mobile-friendly views
+
+Theme preferences are managed through application state.
+
+---
+
+## 🧲 Recruitment Pipeline
+
+The recruitment module demonstrates an ATS-style candidate pipeline using **Angular CDK Drag & Drop**.
+
+```text
+Applied
+   ↓
+Screening
+   ↓
+Interview
+   ↓
+Offer
+   ↓
+Hired
+```
+
+Candidates can also move into a rejected state as part of the demonstration workflow.
+
+---
+
+## 📊 HR Analytics
+
+The reporting area includes visual summaries for:
+
+- Workforce
+- Headcount
+- Department distribution
+- Attendance
+- Leave
+- Timesheets
+- Payroll
+- Performance
+- Recruitment
+
+Reports support date and department filtering in the current frontend implementation.
+
+---
+
+## 📸 Screenshots
+
+### HR Dashboard
+
+![HR Dashboard](docs/screenshots/hr-dashboard.png)
+
+### Dark Theme
+
+![HR Dashboard Dark Theme](docs/screenshots/hr-dashboard-dark.png)
+
+### Employee Directory
+
+![Employee Directory](docs/screenshots/employee-directory.png)
+
+### Attendance
+
+![Attendance Dashboard](docs/screenshots/attendance.png)
+
+### Leave Management
+
+![Leave Management](docs/screenshots/leave-management.png)
+
+### Recruitment Pipeline
+
+![Recruitment Pipeline](docs/screenshots/recruitment-pipeline.png)
+
+> Additional application screenshots can be stored under `docs/screenshots/`.
+
+---
+
+## ⚙️ Getting Started
 
 ### Prerequisites
 
-Use a Node.js version supported by Angular 20 and npm.
+Install a Node.js version supported by Angular 20 and npm.
+
+Verify your installation:
 
 ```bash
 node -v
 npm -v
 ```
 
-### Install
+### Clone
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/angular-enterprise-hrms.git
+git clone https://github.com/Jamshed7664/angular-enterprise-hrms.git
 cd angular-enterprise-hrms
+```
+
+### Install Dependencies
+
+```bash
 npm install
 ```
 
-### Run
+### Start Development Server
 
 ```bash
 npm start
@@ -358,205 +427,102 @@ http://localhost:4200
 npm run build
 ```
 
-## Screenshots
+---
 
-Create the following directory:
+## 🔐 Security & Privacy
 
-```text
-docs/screenshots/
-```
+This repository is designed as a portfolio demonstration and follows several important security principles:
 
-Recommended images:
+- Only synthetic employee data is included
+- No real employee PII should be committed
+- API keys and secrets should never be committed
+- Frontend role guards are demonstration-only
+- Production authorization must be enforced server-side
+- Real authentication should use secure backend-issued tokens or sessions
+- Unsafe dynamic HTML rendering should be avoided
 
-### HR Dashboard
+---
 
-![HR Dashboard](docs/screenshots/hr-dashboard.png)
+## ♿ Accessibility
 
-### HR Dashboard — Dark Theme
+The UI is designed with accessibility considerations including:
 
-![HR Dashboard Dark Theme](docs/screenshots/hr-dashboard-dark.png)
+- Semantic page structure
+- Associated form labels
+- Keyboard-friendly navigation
+- Visible focus states
+- Labels for icon-only actions
+- Readable status information
+- Light and dark theme contrast
 
-### Employee Directory
+---
 
-![Employee Directory](docs/screenshots/employee-directory.png)
+## ⚠️ Portfolio Scope
 
-### Employee Details
+This project demonstrates frontend architecture and HR workflows.
 
-![Employee Details](docs/screenshots/employee-details.png)
+Some capabilities intentionally remain mocked or presentation-oriented.
 
-### Attendance Dashboard
+### Authentication
 
-![Attendance Dashboard](docs/screenshots/attendance.png)
+Authentication is mocked for portfolio demonstration. Production authentication would require secure backend-issued sessions or tokens.
 
-### Leave Management
+### Payroll
 
-![Leave Management](docs/screenshots/leave-management.png)
+Payroll screens demonstrate frontend workflows and presentation only.
 
-### Leave Approval Workflow
+The application does **not** perform real:
 
-![Leave Approval](docs/screenshots/leave-approval.png)
+- Tax calculations
+- Statutory calculations
+- Banking transactions
+- Salary payments
 
-### Timesheets
+### Documents
 
-![Timesheets](docs/screenshots/timesheets.png)
+Document management currently represents metadata and UI workflows.
 
-### Payroll Overview
+Real binary file storage and signing are outside the current frontend scope.
 
-![Payroll Overview](docs/screenshots/payroll.png)
+---
 
-### Performance Dashboard
+## 🗺️ Roadmap
 
-![Performance](docs/screenshots/performance.png)
+Potential future enhancements include:
 
-### Recruitment Pipeline
+- [ ] Real backend integration
+- [ ] JWT / OAuth / SSO
+- [ ] Server-side RBAC
+- [ ] Real database persistence
+- [ ] WebSocket updates
+- [ ] Production payroll engine
+- [ ] Document storage and signing
+- [ ] Email / SMS / push notifications
+- [ ] Internationalization (i18n)
+- [ ] Multi-company / multi-tenant architecture
+- [ ] Employee onboarding/offboarding
+- [ ] Benefits administration
+- [ ] Expense management
+- [ ] Advanced audit and compliance
 
-![Recruitment Pipeline](docs/screenshots/recruitment-pipeline.png)
+---
 
-### Reports
+## 👨‍💻 Author
 
-![Reports](docs/screenshots/reports.png)
+### Jamshed Ahmad
 
-### Settings
+**Frontend Engineer | Angular Developer**
 
-![Settings](docs/screenshots/settings.png)
+Building scalable, maintainable, and modern enterprise web applications with Angular and TypeScript.
 
-### Responsive Mobile View
-
-![Mobile View](docs/screenshots/mobile-view.png)
-
-## Security & Privacy
-
-- Only synthetic employee data is included.
-- No real employee PII should be committed.
-- No API keys, secrets or private credentials belong in the repository.
-- Role guards are demonstration-only until authorization is enforced server-side.
-- Avoid unsafe dynamic HTML rendering.
-- Real authentication should use secure backend-issued tokens/sessions.
-
-## Accessibility
-
-The UI is designed around:
-
-- semantic page structure
-- associated form labels
-- keyboard-friendly buttons and navigation
-- visible focus states
-- icon labels for icon-only actions
-- readable status text
-- light/dark contrast
-
-## v1.0 Scope
-
-Implemented as a portfolio-ready frontend MVP:
-
-- [x] Application shell and responsive navigation
-- [x] Auth flows
-- [x] HR Dashboard
-- [x] Employee Management
-- [x] Organization
-- [x] Attendance
-- [x] Leave + approvals
-- [x] Timesheets
-- [x] Payroll overview
-- [x] Performance
-- [x] Recruitment / ATS
-- [x] Document Center
-- [x] Reports
-- [x] Administration
-- [x] Settings
-- [x] Light/Dark/System theme
-- [x] Notifications
-- [x] Current-user profile
-- [x] Typed mock data layer
-- [x] Lazy feature routes
-- [x] Role-aware route demo
-
-## Future Enhancements
-
-- Real backend and database
-- JWT / OAuth / SSO
-- Biometric attendance
-- Production payroll engine
-- Bank/payment integration
-- Real document storage/signing
-- Email/SMS/push delivery
-- Advanced workflow engine
-- WebSocket updates
-- Server-side RBAC
-- Advanced audit/compliance
-- i18n
-- Multi-company / multi-tenant
-- Onboarding/offboarding automation
-- Benefits administration
-- Expense management
-
-## Suggested Demo Story
-
-1. Sign in as HR Manager.
-2. Review workforce KPIs.
-3. Open Employee Directory.
-4. Inspect an employee profile.
-5. Add or edit an employee.
-6. Review today's attendance.
-7. Approve an attendance correction.
-8. Apply for leave and approve/reject a request.
-9. Review weekly timesheets.
-10. Open payroll summary.
-11. Inspect performance goals.
-12. Drag a recruitment candidate to another stage.
-13. Review document expiry.
-14. Explore reports.
-15. Open the role-permission matrix and audit log.
-16. Switch between light and dark themes.
-17. Open notifications and current-user profile.
-
-## Repository
-
-```text
-angular-enterprise-hrms
-```
-
-## Release
-
-```text
-v1.0.0
-```
-
-## Author
-
-**Jamshed Ahmad**  
-**Code With Jamshed**
-
-Frontend / Angular portfolio project focused on modern enterprise application engineering.
-
-## Suggested GitHub Topics
-
-```text
-angular
-angular20
-typescript
-hrms
-human-resource-management
-enterprise-application
-standalone-components
-angular-signals
-rxjs
-reactive-forms
-angular-cdk
-bootstrap
-scss
-responsive-design
-dark-mode
-frontend
-portfolio-project
-```
-
-## License
-
-Add the MIT License if you want the repository to be freely reusable.
+[LinkedIn](https://www.linkedin.com/in/jamshed-ahmad7664) • [GitHub](https://github.com/Jamshed7664)
 
 ---
 
 <p align="center">
-  <strong>Built with Angular 20 by Code With Jamshed</strong>
+  <strong>Built with Angular 20 & TypeScript</strong>
+</p>
+
+<p align="center">
+  <sub>Designed and developed by Jamshed Ahmad</sub>
 </p>
